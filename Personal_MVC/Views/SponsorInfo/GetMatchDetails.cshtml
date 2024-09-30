@@ -1,0 +1,24 @@
+﻿@model List<Personal_MVC.Models.MatchDetails>
+
+<h2>Match Details</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Match ID</th>
+            <th>Match Date</th>
+            <th>Location</th>
+            <th>Total Payments</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var match in Model)
+        {
+            <tr>
+                <td>@match.MatchId</td>
+                <td>@match.MatchDate.ToShortDateString()</td>
+                <td>@match.Location</td>
+                <td>@match.TotalPayments</td>
+            </tr>
+        }
+    </tbody>
+</table>

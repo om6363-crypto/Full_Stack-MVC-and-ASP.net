@@ -1,0 +1,22 @@
+﻿@model Personal_MVC.Models.Payments
+
+<h2>Add Payment</h2>
+<form asp-action="AddPayment" method="post">
+    <div class="form-group">
+        <label>Contract ID</label>
+        <input asp-for="ContractID" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Payment Date</label>
+        <input asp-for="PaymentDate" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Amount Paid</label>
+        <input asp-for="AmountPaid" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Payment Status</label>
+        <input asp-for="PaymentStatus" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

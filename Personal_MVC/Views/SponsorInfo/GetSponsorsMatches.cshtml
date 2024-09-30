@@ -1,0 +1,22 @@
+﻿@model List<Personal_MVC.Models.SponsorMatches>
+
+<h2>Sponsor Matches</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Sponsor ID</th>
+            <th>Sponsor Name</th>
+            <th>Number of Matches</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var sponsorMatch in Model)
+        {
+            <tr>
+                <td>@sponsorMatch.SponsorId</td>
+                <td>@sponsorMatch.SponsorName</td>
+                <td>@sponsorMatch.NumberOfMatches</td>
+            </tr>
+        }
+    </tbody>
+</table>

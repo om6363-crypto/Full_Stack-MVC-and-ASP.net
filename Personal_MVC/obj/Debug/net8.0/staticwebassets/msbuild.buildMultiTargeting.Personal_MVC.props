@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Personal_MVC.props" />
+</Project>
